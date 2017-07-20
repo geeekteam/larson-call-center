@@ -1,14 +1,148 @@
 html, body
-  margin: 0
-  height: 100%
+	margin: 0
+	height: 100%
 
-body
-  box-shadow: inset 0 0 500px
+body, input, textarea
+	font-family: "Avenir Next", sans-serif
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+button, input, textarea
+	border: none
+	outline: none
+
+.section
+	width: 100%
+	padding: 30px 0
+
+.section__1
+	background: url("../images/bg-section-1.jpg") no-repeat center
+	width: 100%
+	height: 750px
+
+.container
+	max-width: 1300px
+	margin: 0 auto
+	padding: 0 65px
+
+.h1-title
+	font-family: 'Avenir Next Demi', sans-serif
+	color: $colorWhite
+	font-size: 58px
+	font-weight: 600
+	text-align: center
+	margin-bottom: 23px
+
+.h2-title
+	color: $colorProtectiveBlue
+	text-align: center
+	font-size: 42px
+	font-weight: 500
+	margin-bottom: 33px
 
 .logo
-  left: 50%
-  margin-left: -37.5px
-  margin-top: -39.5px
-  position: absolute
-  top: 50%
-  font-size: 0
+	text-align: center
+	margin-bottom: 22px
+
+.default-list
+	width: 1040px
+	margin: 0 auto
+	margin-bottom: 66px
+	li
+		font-size: 22px
+		color: $colorWhite
+
+.default-text
+	font-size: 26px
+	font-weight: 500
+	text-align: center
+	color: $colorWhite
+	margin-bottom: 34px
+
+.arrow-down
+	text-align: center
+
+.section__2
+	background: url("../images/bg-section-2.jpg") no-repeat top
+	width: 100%
+	height: 985px
+	justify-content: center
+
+.img-mail
+	margin-left: 400px
+
+.section__2-descr
+	width: 660px
+
+.section__2-title
+	max-width: 660px
+	margin-bottom: 33px
+	font-size: 32px
+	font-weight: 500
+	color: $colorBlack
+
+.section__2-text
+	color: $colorBlack
+	font-size: 18px
+	margin-bottom: 33px
+
+.input-wrapper
+	margin-bottom: 20px
+	width: 585px
+	height: 50px
+
+input
+	padding: 10px 15px
+	height: 50px
+	display: flex
+	width: 100%
+	font-size: 18px
+	::-webkit-input-placeholder, ::-moz-placeholder, :-moz-placeholder, :-ms-input-placeholder
+		opacity: 0.6
+
+.textarea-wrapper
+	width: 585px
+	height: 130px
+	margin-bottom: 20px
+
+textarea
+	padding: 10px 15px
+	height: 100%
+	width: 100%
+	font-size: 18px
+	border: 1px solid #d4d4d4
+	::-webkit-input-placeholder, ::-moz-placeholder, :-moz-placeholder, :-ms-input-placeholder
+		opacity: 0.6
+	
+.btn-blue
+	width: 220px
+	height: 50px
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: #22b3ff
+	color: $colorWhite
+	border-radius: 100px
+	transition: all 0.25s ease
+	cursor: pointer
+	&:hover
+		box-shadow: inset 0 0 1000px rgba(#000, 0.17)
+
+.footer
+	height: 70px
+	background-color: #3a3a3a
+	max-width: 1300px
+	margin: 0 auto
+	padding: 0 65px
+
+.footer-text, .footer-link
+	font-size: 14px
+	color: $colorWhite
+
+.footer-link
+	text-decoration: underline
+	&:hover
+		text-decoration: none
