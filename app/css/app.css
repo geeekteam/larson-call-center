@@ -13617,6 +13617,7 @@ button, input, textarea {
   -ms-flex-pack: center;
   justify-content: center;
   background-size: cover;
+  background-position-x: 60%;
 }
 
 .img-mail__image {
