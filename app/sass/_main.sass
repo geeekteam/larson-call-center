@@ -16,12 +16,12 @@ button, input, textarea
 
 .section
 	width: 100%
-	padding: 30px 0
 
 .section__1
-	background: url("../images/bg-section-1.jpg") no-repeat center
+	background: url("../images/bg-section-1.jpg") no-repeat top
 	width: 100%
-	height: 750px
+	min-height: 750px
+	background-size: cover
 
 .container
 	max-width: 1300px
@@ -48,8 +48,8 @@ button, input, textarea
 	margin-bottom: 22px
 
 .default-list
-	width: 1040px
-	margin: 0 auto
+	max-width: 1040px
+	margin: 0 auto 0 30px
 	margin-bottom: 66px
 	li
 		font-size: 22px
@@ -68,14 +68,16 @@ button, input, textarea
 .section__2
 	background: url("../images/bg-section-2.jpg") no-repeat top
 	width: 100%
-	height: 985px
+	min-height: 985px
 	justify-content: center
+	background-size: cover
 
-.img-mail
+.img-mail__image
 	margin-left: 400px
+	max-width: 61px
 
 .section__2-descr
-	width: 660px
+	max-width: 660px
 
 .section__2-title
 	max-width: 660px
@@ -91,24 +93,50 @@ button, input, textarea
 
 .input-wrapper
 	margin-bottom: 20px
-	width: 585px
-	height: 50px
+	max-width: 585px
+	min-height: 50px
 
-input
+.input
 	padding: 10px 15px
 	height: 50px
 	display: flex
 	width: 100%
 	font-size: 18px
-	::-webkit-input-placeholder, ::-moz-placeholder, :-moz-placeholder, :-ms-input-placeholder
+	border: 1px solid transparent
+	&::-webkit-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &:-ms-input-placeholder
 		opacity: 0.6
+	&:active, &:focus
+		border: 1px solid #22b3ff
+
+.input-ok, .input-error-1
+	position: relative
+	&::after
+		position: absolute
+		content: ''
+		left: auto
+		right: 15px
+		top: 20px
+
+.input-error-1, .input-error-2
+	position: relative
+	input
+		border: 1px solid $colorRed
+
+.input-error-1
+	&::after
+		cursor: pointer
+
+.input-error-text
+	color: $colorRed
+	font-size: 13px
+	margin-top: 5px
 
 .textarea-wrapper
-	width: 585px
+	max-width: 585px
 	height: 130px
 	margin-bottom: 20px
 
-textarea
+.textarea
 	padding: 10px 15px
 	height: 100%
 	width: 100%
@@ -116,7 +144,9 @@ textarea
 	border: 1px solid #d4d4d4
 	::-webkit-input-placeholder, ::-moz-placeholder, :-moz-placeholder, :-ms-input-placeholder
 		opacity: 0.6
-	
+	&:active, &:focus
+		border: 1px solid #22b3ff
+
 .btn-blue
 	width: 220px
 	height: 50px
