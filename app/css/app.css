@@ -13590,8 +13590,7 @@ button, input, textarea {
 
 .default-list {
   max-width: 1040px;
-  margin: 0 auto 0 30px;
-  margin-bottom: 66px;
+  margin: 0 auto 66px 90px;
 }
 .default-list li {
   font-size: 22px;
@@ -13623,6 +13622,7 @@ button, input, textarea {
 .img-mail__image {
   margin-left: 400px;
   max-width: 61px;
+  margin-bottom: 35px;
 }
 
 .section__2-descr {
