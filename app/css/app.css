@@ -13735,7 +13735,7 @@ button, input, textarea {
 .footer {
   background-color: #3a3a3a;
   margin: 0 auto;
-  padding: 25px 65px;
+  padding: 25px 0;
 }
 
 .footer-text, .footer-link {
