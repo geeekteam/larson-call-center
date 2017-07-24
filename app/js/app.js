@@ -259,6 +259,17 @@ var YOURAPPNAME = function () {
 
             return plugin;
         }
+    }, {
+        key: 'slideDown',
+        value: function slideDown() {
+            $('.jq-slide-scroll').click(function () {
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                console.log(id);
+                console.log(top);
+                $('html, body').animate({ scrollTop: top }, 300);
+            });
+        }
     }]);
 
     return YOURAPPNAME;
@@ -286,5 +297,6 @@ var YOURAPPNAME = function () {
         // App was fully load! Paste external app source code here... 4example if your use jQuery and something else
         // Please do not use jQuery ready state function to avoid mass calling document event trigger!
         app.popups();
+        app.slideDown();
     });
 })();
