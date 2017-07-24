@@ -265,8 +265,6 @@ var YOURAPPNAME = function () {
             $('.jq-slide-scroll').click(function () {
                 var id = $(this).attr('href'),
                     top = $(id).offset().top;
-                console.log(id);
-                console.log(top);
                 $('html, body').animate({ scrollTop: top }, 300);
             });
         }
