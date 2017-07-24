@@ -14,6 +14,9 @@ button, input, textarea
 	border: none
 	outline: none
 
+.wrap
+	min-width: 320px
+
 .section
 	width: 100%
 
@@ -72,12 +75,21 @@ button, input, textarea
 	text-align: center
 
 .section__2
-	background: url("../images/bg-section-2.jpg") no-repeat top
+	position: relative
 	width: 100%
 	min-height: 985px
 	justify-content: center
 	background-size: cover
-	background-position-x: 60%
+	&::after
+		position: absolute
+		z-index: -1
+		content: ''
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: url("../images/bg-section-2.jpg") no-repeat top
+		background-position-x: 60%
 
 .img-mail__image
 	margin-left: 400px
@@ -105,7 +117,7 @@ button, input, textarea
 	display: flex
 	width: 100%
 	font-size: 18px
-	border: 1px solid transparent
+	border: 1px solid #d4d4d4
 	&::-webkit-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &:-ms-input-placeholder
 		opacity: 0.6
 	&:active, &:focus
