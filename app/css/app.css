@@ -13727,6 +13727,7 @@ button, input, textarea {
   border-radius: 100px;
   transition: all 0.25s ease;
   cursor: pointer;
+  font-size: 18px;
 }
 .btn-blue:hover {
   box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.17);
