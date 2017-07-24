@@ -13818,6 +13818,10 @@ button, input, textarea {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
+  .default-list {
+    margin-left: 40px;
+  }
 }
 .popup-wrapper {
   top: 0;
