@@ -80,16 +80,9 @@ button, input, textarea
 	min-height: 985px
 	justify-content: center
 	background-size: cover
-	&::after
-		position: absolute
-		z-index: -1
-		content: ''
-		top: 0
-		left: 0
-		right: 0
-		bottom: 0
-		background: url("../images/bg-section-2.jpg") no-repeat top
-		background-position-x: 60%
+	background-image: linear-gradient(to bottom, rgba(#fff, 0), rgba(#fff, 0)), url("../images/bg-section-2.jpg")
+	background-position-x: 60%
+	background-repeat: no-repeat
 
 .img-mail__image
 	margin-left: 400px
