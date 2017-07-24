@@ -261,12 +261,12 @@ class YOURAPPNAME {
     const app = new YOURAPPNAME(document);
 
     app.appLoad('loading', function () {
-        console.log('App is loading... Paste your app code here.');
+        // console.log('App is loading... Paste your app code here.');
         // App is loading... Paste your app code here. 4example u can run preloader event here and stop it in action appLoad dom or full
     });
 
     app.appLoad('dom', function () {
-        console.log('DOM is loaded! Paste your app code here (Pure JS code).');
+        // console.log('DOM is loaded! Paste your app code here (Pure JS code).');
         // DOM is loaded! Paste your app code here (Pure JS code).
         // Do not use jQuery here cause external libs do not loads here...
 
@@ -274,7 +274,7 @@ class YOURAPPNAME {
     });
 
     app.appLoad('full', function (e) {
-        console.log('App was fully load! Paste external app source code here... For example if your use jQuery and something else');
+        // console.log('App was fully load! Paste external app source code here... For example if your use jQuery and something else');
         // App was fully load! Paste external app source code here... 4example if your use jQuery and something else
         // Please do not use jQuery ready state function to avoid mass calling document event trigger!
         app.popups();
