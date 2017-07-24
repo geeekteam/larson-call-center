@@ -13573,6 +13573,7 @@ button, input, textarea {
   font-weight: 600;
   text-align: center;
   margin-bottom: 23px;
+  line-height: 1.21;
 }
 
 .h2-title {
@@ -13581,6 +13582,7 @@ button, input, textarea {
   font-size: 42px;
   font-weight: 500;
   margin-bottom: 33px;
+  line-height: 1.19;
 }
 
 .logo {
@@ -13599,6 +13601,7 @@ button, input, textarea {
 .default-list li {
   font-size: 22px;
   color: #fff;
+  line-height: 1.36;
 }
 
 .default-text {
@@ -13607,6 +13610,7 @@ button, input, textarea {
   text-align: center;
   color: #fff;
   margin-bottom: 34px;
+  line-height: 1.35;
 }
 
 .arrow-down {
